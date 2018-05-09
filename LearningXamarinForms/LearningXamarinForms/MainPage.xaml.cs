@@ -13,5 +13,10 @@ namespace LearningXamarinForms
 		{
 			InitializeComponent();
 		}
-	}
+        private void Btn_Clicked (object  s, EventArgs e)
+        {
+            DisplayAlert("Title", "Message", "Ok");
+        }
+
+    }
 }
