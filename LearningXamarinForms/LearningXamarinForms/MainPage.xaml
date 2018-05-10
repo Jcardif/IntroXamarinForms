@@ -6,7 +6,7 @@
     <StackLayout>
         <Button HorizontalOptions="Center"
                 VerticalOptions="Center"
-                Clicked="Btn_Clicked"
+                Clicked=""
                 Text="Click">
         </Button>
     </StackLayout>
