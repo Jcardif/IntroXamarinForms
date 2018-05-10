@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearningXamarinForms.GreetPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     BindingContext="{x:Reference slider}">
+            <Button Text="Click Me!"
+                    BackgroundColor="Blue"
+                    TextColor="Green"
+                    Clicked="Button_OnClicked"/>
+            <BoxView 
+                BackgroundColor="Purple"
+                Opacity="{Binding Value}"/>
+            <Label x:Name="label"
+                   Text="{Binding Value,
+                    StringFormat='value is {0:F2}'}"
+                   Opacity="{Binding Value}"/>
+            <Slider x:Name="slider"
+                    Value="0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

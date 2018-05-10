@@ -13,7 +13,7 @@ namespace LearningXamarinForms
 		{
 			InitializeComponent();
 
-			MainPage = new LearningXamarinForms.MainPage();
+			MainPage = new LearningXamarinForms.GreetPage();
 		}
 
 		protected override void OnStart ()
